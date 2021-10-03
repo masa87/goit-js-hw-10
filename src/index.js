@@ -36,8 +36,9 @@ const renderCountriesList = countries => {
       countryList.append(liItem);
 
       const miniFlags = document.createElement('img');
-      miniFlags.src = flags[0];
+      miniFlags.src = flags.svg;
       miniFlags.classList.add('flags-mini_img');
+      miniFlags.alt = 'country flag';
       liItem.append(miniFlags);
 
       const countryName = document.createElement('p');
