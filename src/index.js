@@ -50,7 +50,7 @@ const renderCountriesList = countries => {
     listReset();
 
     const finalCountry = countries.map(({ name, flags, capital, population, languages }) => {
-      return `<h1 class="country-info_name"><img src="${flags[0]}" class="flags-big_img"/>${name}</h1>
+      return `<h1 class="country-info_name"><img src="${flags.svg}" class="flags-big_img"/>${name}</h1>
       <p class="country-info_item"><span>Capital: </span> ${capital} </p>
       <p class="country-info_item"><span>Population: </span> ${population} </p>
       <p class="country-info_item"><span>Languages: </span> ${languages[0].name}</p>
